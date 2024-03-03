@@ -5,4 +5,8 @@ You are working in a newly established SOC where there is still a lot of work to
 # Challenge Submission
 ## Question 1):  
 Name the supply chain attack related to Java logging library in the end of 2021 (Format: AttackNickname) (1 points)
-
+![](https://imgur.com/iY6Gv6m.png)
+After Going through the report, I found the name of the supply chain attack was **Log4j**
+![](https://imgur.com/a/6A8GAT5.png)
+Inputting it into the answer box its correct 
+![]
