@@ -1,4 +1,4 @@
-# Scenario
+![image](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/a4f4b01e-f078-44d6-b795-bd72099c0ff7)# Scenario
 
 You are working in a newly established SOC where there is still a lot of work to do to make it fully functional. As part of gathering intelligence, you have been assigned a task to study a threat report released in 2022 and suggest some useful outcomes for your SOC.
 
@@ -49,5 +49,8 @@ Submit the CVE of the zero-day vulnerability of a driver which led to RCE and ga
 
 ![Screenshot 2024-03-04 094116](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/8f5d8fc3-0a4e-4fb2-8f6a-65997a137232)
 
+## _Question 5)_ 
+Mention the 2 adversary groups that leverage SEO to gain initial access (Format: Group1, Group2) (1 points)
+![image](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/07fa4d12-446c-46a1-9bfa-ac801a592dce)
 
 
