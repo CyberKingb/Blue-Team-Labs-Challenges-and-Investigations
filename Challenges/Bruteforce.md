@@ -102,25 +102,7 @@ Security ID:		NULL SID
 
 ![image](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/a09432d6-ec0e-4f38-9774-bd0ccfd3c2c2)
 
-- Using PowerShell I can find the lowest and highest port in the **BTLO_Bruteforce_Challenge.txt** file.
+- The range of ports used was `49162–6553`
 
-```powershell
-# Read the content of the document
-$content = Get-Content -Path "path\to\your\document.txt" -Raw
+![image](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/cfa141cc-0df8-4f37-ad78-f54b41441a8e)
 
-# Define the word you want to search for
-$wordToSearch = "your_word_here"
-
-# Use Select-String to find instances of the word
-$matches = $content | Select-String -Pattern $wordToSearch -AllMatches | ForEach-Object { $_.Matches.Value }
-
-# Convert the matches to numbers (assuming they are numerical values)
-$numericValues = $matches | ForEach-Object { [double]$_ }
-
-# Find the highest and lowest values
-$highestValue = $numericValues | Measure-Object -Maximum | Select-Object -ExpandProperty Maximum
-$lowestValue = $numericValues | Measure-Object -Minimum | Select-Object -ExpandProperty Minimum
-
-```
-
-![image](https://github.com/CyberKingb/Blue-Team-Labs-Challenges-and-Investigations/assets/161872623/e34cfa40-5d3d-4774-96b0-fd976d10aa88)
