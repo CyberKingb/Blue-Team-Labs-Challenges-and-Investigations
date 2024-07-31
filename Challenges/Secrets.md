@@ -43,6 +43,36 @@ For this we firstly copy the token and put it into a `.txt` file. I put mine int
 
 ![Saving the Token into a file](https://github.com/user-attachments/assets/935b10b3-9b6e-4924-bc37-dad965ce2bad)
 
-Now on our command line `- hashcat secret.txt -m 16500 -a 3 ?a?a?a?a`
+Now on our command line we input `hashcat secret.txt -m 16500 -a 3 ?a?a?a?a`
+
+- hashcat: The command-line utility for running the Hashcat program.
+  
+- secret.txt: This is the input file containing the hashes we want to crack. Hashcat will read this file to get the hashes that need to be cracked.
+
+- -m 16500: This specifies the hash mode. In this case, 16500 is the mode for "JSON Web Token". 
+  
+- -a 3: This specifies the attack mode. 3 stands for "Brute-Force" attack mode. In this mode, Hashcat will try every possible combination of characters to crack the hash.
+  
+- ?a?a?a?a: This is the mask for the brute-force attack. ?a represents all possible characters (including uppercase, lowercase, numbers, and special characters). The mask ?a?a?a?a means Hashcat will try every combination of four characters from the set of all possible characters.
+I found the secret to be `bT!0`
+![cracked](https://github.com/user-attachments/assets/222ca7f0-9097-4162-b1b9-9ec518775c0f)
+
+![Solved!](https://github.com/user-attachments/assets/85038081-ad4a-4303-9c6e-0a4b84cf87c5)
+
+
+### **#5) Can you generate a new verified signature ticket with a low privilege? (Format: String.String.String) (2 points)**
+
+For this I needed to paste the token given in the challenge into (https://jwt.io/) debugger so I could also input the secret I found in question 2. I also had to change the `admin=true` to `admin=false`.
+
+And the result I got is `eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmbGFnIjoiQlRMe180X0V5ZXN9IiwiaWF0Ijo5MDAwMDAwMCwibmFtZSI6IkdyZWF0RXhwIiwiYWRtaW4iOmZhbHNlfQ.nMXNFvttCvtDcpswOQA8u_LpURwv6ZrCJ-ftIXegtX4`
+
+![New Signature](https://github.com/user-attachments/assets/70c46f10-1a32-443d-a579-af6263c80b9f)
+
+![Solved](https://github.com/user-attachments/assets/e9b2ddbe-4108-4d32-bb52-98c8b328646f)
+
+
+# Thats the end of the challenge please do well to follow me on Github, X (Twitter), and Linkedin. Thank you
+
+
 
 
