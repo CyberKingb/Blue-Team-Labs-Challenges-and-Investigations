@@ -43,6 +43,6 @@ For this we firstly copy the token and put it into a `.txt` file. I put mine int
 
 ![Saving the Token into a file](https://github.com/user-attachments/assets/935b10b3-9b6e-4924-bc37-dad965ce2bad)
 
-Now on our command line 
+Now on our command line `- hashcat secret.txt -m 16500 -a 3 ?a?a?a?a`
 
 
